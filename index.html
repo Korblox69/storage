@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Downloads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Client Downloads</h1>
+    <button onclick="downloadResent()">Resent Client</button>
+    <button onclick="alert('Normal Eagler functionality not implemented yet')">Normal Eagler</button>
+    <button onclick="alert('Shadow functionality not implemented yet')">Shadow</button>
+
+    <script>
+        function downloadResent() {
+            const link = document.createElement('a');
+            link.href = 'resent.html'; // Replace with the actual path to resent.html
+            link.download = 'resent.html';
+            link.click();
+        }
+    </script>
+
+    <footer>
+        <p>Credits: Made by Korblox</p>
+    </footer>
+</body>
+</html>
